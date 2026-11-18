@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumusta: A Filipino Food Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.section-title {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    text-align: center;
+    margin: 0 0 12px;
+}
+.section-sub {
+    max-width: 620px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.hero .actions .btn {
+    margin: 6px;
+}
+.hero .actions .btn.alt {
+    background-color: var(--ink);
+}
+.hero .actions .btn.alt:hover {
+    background-color: var(--red);
+}
+
+/* About the system: feature cards */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 90px;
+}
+.feature {
+    background-color: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+.feature .icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--gold-soft);
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.feature h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 0 0 8px;
+}
+.feature p {
+    margin: 0;
+    color: var(--gray);
+}
+
+/* Origin of the name */
+.origin {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    align-items: center;
+    background-color: var(--gold-soft);
+    border-radius: 24px;
+    padding: 48px;
+    margin-bottom: 90px;
+    box-shadow: var(--shadow-sm);
+}
+.origin .word {
+    font-family: Georgia, serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--red);
+    line-height: 1;
+}
+.origin .word span {
+    display: block;
+    margin-top: 12px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    color: var(--gold-text);
+}
+.origin p {
+    margin: 0 0 14px;
+    color: var(--gray);
+}
+.origin p:last-child {
+    margin-bottom: 0;
+}
+.cta {
+    text-align: center;
+    padding-bottom: 110px;
+}
+.cta .btn {
+    margin: 6px;
+}
+.cta .btn.alt {
+    background-color: var(--ink);
+}
+.cta .btn.alt:hover {
+    background-color: var(--red);
+}
+
+@media (max-width: 820px) {
+    .origin {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+    }
+}
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .origin .word {
+        font-size: 44px;
+    }
+}
+</style>
+</head>
+<body id="top">
+
+<!-- NAVIGATION -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><i></i>Kumusta</a>
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="recipes.html#library">Recipes</a></li>
+      <li><a href="regions.html">Regions</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a class="pill" href="recipes.html#library">Start cooking</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Kumusta<span>A Filipino Food Journey</span></h1>
+    <p>A small recipe system that takes you across the Philippines one dish at a time, from Pampanga's smoky grills to Bicol's coconut-and-chili stews.</p>
+  </div>
+</section>
+
+<main class="wrap">
+
+<!-- ABOUT THE SYSTEM -->
+  <section id="system">
+    <h2 class="section-title">About the system</h2>
+    <p class="section-sub">Named after <em>Kumusta</em>—the reality cooking show where Jodi Sta. Maria, Chef JP Anglo, and Ji Chang-wook brought Filipino cuisine to South Korea. Drawn from the familiar Filipino greeting meaning "How are you?", this recipe collection uses food as a warm welcome and a bridge between cultures.</p>
+
+  <!-- ORIGIN OF THE NAME -->
+  <section class="origin">
+    <div class="word">Kumusta<span>“How are you?”</span></div>
+    <div>
+      <p>“Kumusta” is the everyday Filipino greeting. It comes from the Spanish <em>“¿Cómo está?”</em>, a reminder of the centuries when Spain ruled the islands and shaped the language.</p>
+       <p>We chose it as the name because food is how Filipinos check in on each other: <em>“Nag-kaon kana lab?”</em> (“Have you eaten yet?”) is just another way of asking how you are.</p>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="cta">
+    <a class="btn" href="recipes.html#library">Browse recipes →</a>
+    <a class="btn alt" href="regions.html">Explore regions →</a>
+    <a class="btn alt" href="about.html">Meet the team →</a>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Kumusta · Salamat sa pagbisita</div></footer>
+
+</body>
+</html>

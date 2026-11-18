@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipes — Kumusta: A Filipino Food Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><i></i>Kumusta</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html#library" aria-current="page">Recipes</a></li>
+      <li><a href="regions.html">Regions</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a class="pill" href="recipes.html#library">Start cooking</a>
+  </div>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Recipes</h1>
+    <p>Pick a course to filter the dishes. Tap any card to open its recipe, then tick off the ingredients as you cook.</p>
+  </div>
+</section>
+
+<main id="library" class="wrap">
+  <input class="visually-hidden" type="radio" name="course" id="f-all" checked>
+  <input class="visually-hidden" type="radio" name="course" id="f-ulam">
+  <input class="visually-hidden" type="radio" name="course" id="f-sabaw">
+  <input class="visually-hidden" type="radio" name="course" id="f-merienda">
+
+  <nav class="filters" aria-label="Filter recipes by category">
+    <label for="f-all">All Dishes</label>
+    <label for="f-ulam">Ulam (Mains)</label>
+    <label for="f-sabaw">Sabaw (Soups &amp; Stews)</label>
+    <label for="f-merienda">Merienda &amp; Panghimagas (Desserts)</label>
+  </nav>
+
+  <section class="grid">
+
+<article class="card" data-cat="ulam">
+    <a href="#adobo" class="card-link">
+        <div class="thumb">
+            <img src="assets/adobo.jpg" alt="Chicken and pork adobo over rice">
+            <div class="badges">
+                <span class="glass">📍 Tagalog Region</span>
+                <span class="glass">⏱ 60 min</span>
+            </div>
+        </div>
+
+        <div class="body">
+            <h2>Chicken &amp; Pork Adobo</h2>
+            <p>Long before Spanish rule, Filipinos preserved meat in vinegar and salt. Soy sauce and bay leaf later made adobo the unofficial national dish.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+
+<article class="card" data-cat="sabaw">
+    <a href="#sinigang" class="card-link">
+        <div class="thumb">
+            <img src="assets/sinigang.jpg" alt="Steaming bowl of sour pork soup" loading="lazy">
+            <div class="badges">
+                <span class="glass">📍 Luzon, Nationwide</span>
+                <span class="glass">⏱ 75 min</span>
+            </div>
+        </div>
+        <div class="body">
+            <h2>Pork Sinigang</h2>
+            <p>Filipinos' go-to comfort soup gets its sourness from tamarind, guava or calamansi, and each region has its own favorite souring agent.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+
+<article class="card" data-cat="sabaw">
+    <a href="#karekare" class="card-link">
+        <div class="thumb">
+            <img src="assets/kare-kare.jpg" alt="Rich peanut stew with vegetables" loading="lazy">
+            <div class="badges">
+                <span class="glass">📍 Pampanga</span>
+                <span class="glass">⏱ 3 hrs</span>
+            </div>
+        </div>
+        <div class="body">
+            <h2>Kare-Kare</h2>
+            <p>Pampanga's fiesta stew simmers oxtail in a velvety ground-peanut sauce and is always served with salty bagoong alamang on the side.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+
+<article class="card" data-cat="ulam">
+    <a href="#bicol" class="card-link">
+        <div class="thumb">
+            <img src="assets/bicol-express.jpg" alt="Coconut milk pork stew with chilies" loading="lazy">
+            <div class="badges">
+                <span class="glass">📍 Bicol Region</span>
+                <span class="glass">⏱ 50 min</span>
+            </div>
+        </div>
+        <div class="body">
+            <h2>Bicol Express</h2>
+            <p>Bicolanos love chilies and coconut milk. This fiery pork stew was named in Manila after the train that connected the region to the capital.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+
+<article class="card" data-cat="ulam">
+    <a href="#sisig" class="card-link">
+        <div class="thumb">
+            <img src="assets/pork-sisig.jpg" alt="Sizzling grilled pork sisig" loading="lazy">
+            <div class="badges">
+                <span class="glass">📍 Pampanga</span>
+                <span class="glass">⏱ 45 min</span>
+            </div>
+        </div>
+        <div class="body">
+            <h2>Pork Sisig</h2>
+            <p>Angeles City cooks turned pig's head and ears into a sizzling, citrusy plate in the 1970s. It's now the Philippines' favorite pulutan.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+
+<article class="card" data-cat="merienda">
+    <a href="#halohalo" class="card-link">
+        <div class="thumb">
+            <img src="assets/Halo-Halo.jpg" alt="Colorful layered shaved-ice dessert" loading="lazy">
+            <div class="badges">
+                <span class="glass">📍 Tagalog Region</span>
+                <span class="glass">⏱ 20 min</span>
+            </div>
+        </div>
+        <div class="body">
+            <h2>Halo-Halo</h2>
+            <p>Its name means "mix-mix." Japanese-era ice-and-bean sweets grew into a tall glass of shaved ice, ube, leche flan and sweet beans.</p>
+            <span class="btn">View Recipe →</span>
+        </div>
+    </a>
+</article>
+  </section>
+</main>
+
+<div class="modal" id="adobo" role="dialog" aria-label="Chicken and Pork Adobo recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/adobo.jpg" alt="Chicken and pork adobo">
+      <span class="region">📍 Tagalog Region</span>
+      <h2>Chicken &amp; Pork Adobo</h2>
+    </div>
+    <div class="intro">
+      <p>Spanish colonizers gave this dish its name, but the technique is older: Indigenous Filipinos stewed meat in vinegar and salt to keep it fresh in the tropical heat. Every family guards its own version, from the soy-heavy to the dry and garlicky.</p>
+      <div class="tags"><span>Savory</span><span>Tangy</span><span>Garlicky</span></div>
+    </div>
+    <div class="meta"><div><b>15 min</b><span>Prep time</span></div><div><b>45 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>6 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">500 g chicken thighs</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">500 g pork belly, cubed</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup soy sauce</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup cane or coconut vinegar</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 head garlic, crushed</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 bay leaves and 1 tsp whole peppercorns</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 cup water, 1 tbsp brown sugar (optional)</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Marinate</strong><span>Combine meat, soy sauce and garlic. Rest for at least 30 minutes.</span></li>
+          <li><strong>Sear</strong><span>Brown the pork first, then the chicken, in a heavy pot. Return all meat to the pot with the marinade.</span></li>
+          <li><strong>Simmer</strong><span>Add vinegar (do not stir for 2 minutes), then water, bay leaves and peppercorns. Cover and simmer 35–40 minutes.</span></li>
+          <li><strong>Reduce</strong><span>Uncover and cook until the sauce is glossy and thick. Serve over steamed rice.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="sinigang" role="dialog" aria-label="Pork Sinigang na Baboy recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/sinigang.jpg" alt="Pork sinigang na baboy soup">
+      <span class="region">📍 Luzon Region</span>
+      <h2>Pork Sinigang</h2>
+    </div>
+    <div class="intro">
+      <p>A quintessential Filipino comfort food defined by its distinct sour broth, typically powered by fresh tamarind. Loaded with tender pork belly and crisp local vegetables, it is the ultimate remedy for rainy days.</p>
+      <div class="tags"><span>Sour</span><span>Comfort Food</span><span>Soup</span></div>
+    </div>
+    <div class="meta">
+      <div><b>15 min</b><span>Prep time</span></div>
+      <div><b>60 min</b><span>Cook time</span></div>
+      <div><b>Easy</b><span>Difficulty</span></div>
+      <div><b>4 people</b><span>Servings</span></div>
+    </div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">800g pork belly or ribs, cut into chunks</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 packet sinigang mix (or 500g fresh tamarind boiled &amp; mashed)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 medium tomatoes, quartered</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 medium onion, chopped</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 daikon radish (labanos), sliced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 bundle string beans (sitaw) &amp; eggplant</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 bundle water spinach (kangkong)</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Boil Pork</strong><span>In a pot with water, tomatoes, and onions, bring pork to a boil and simmer until tender (about 40 minutes).</span></li>
+          <li><strong>Sour Base</strong><span>Add the tamarind mix or fresh tamarind extract into the broth and stir well.</span></li>
+          <li><strong>Add Veggies</strong><span>Drop in radishes, string beans, and eggplant. Cook for 5 minutes until tender-crisp.</span></li>
+          <li><strong>Finish</strong><span>Stir in kangkong leaves and green finger chilies. Season with patis (fish sauce) to taste, then serve hot with rice.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="karekare" role="dialog" aria-label="Kare-Kare recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/kare-kare.jpg" alt="Kare-Kare">
+      <span class="region">📍 Pampanga</span>
+      <h2>Kare-Kare</h2>
+    </div>
+    <div class="intro">
+      <p>Pampanga is the Philippines' culinary capital, and kare-kare is its showpiece for fiestas. The sauce is thickened with toasted rice and ground peanuts, tinted with annatto, and balanced by a spoonful of salty-funky bagoong.</p>
+      <div class="tags"><span>Creamy</span><span>Nutty</span><span>Savory</span></div>
+    </div>
+    <div class="meta"><div><b>30 min</b><span>Prep time</span></div><div><b>2.5 hrs</b><span>Cook time</span></div><div><b>Medium</b><span>Difficulty</span></div><div><b>6 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 kg oxtail, cut in pieces</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">¾ cup ground roasted peanuts or peanut butter</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">¼ cup toasted ground rice</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp annatto (atsuete) water</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 eggplant, 1 bunch bok choy, 150 g sitaw (long beans)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 onion and 4 garlic cloves</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Bagoong alamang (shrimp paste), to serve</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Tenderize the oxtail</strong><span>Boil in 2 liters of water for 2 hours (or pressure cook 45 minutes) until fork-tender.</span></li>
+          <li><strong>Build the sauce</strong><span>Sauté garlic and onion. Add annatto water, peanuts and toasted rice, then ladle in 3 cups of oxtail broth.</span></li>
+          <li><strong>Combine</strong><span>Return oxtail to the pot and simmer 20 minutes until thick and glossy. Season with salt.</span></li>
+          <li><strong>Add vegetables</strong><span>Blanch or briefly simmer the vegetables. Serve with rice and bagoong on the side.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="bicol" role="dialog" aria-label="Bicol Express recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/bicol-express.jpg" alt="Bicol Express">
+      <span class="region">📍 Bicol Region</span>
+      <h2>Bicol Express</h2>
+    </div>
+    <div class="intro">
+      <p>Bicol's cuisine is built on gata (coconut milk) and fiery siling labuyo. The dish as we know it was popularized in Manila in the 1970s and named after the Bicol Express train. Real Bicolanos like it hot enough to make you sweat.</p>
+      <div class="tags"><span>Spicy</span><span>Creamy</span><span>Rich</span></div>
+    </div>
+    <div class="meta"><div><b>15 min</b><span>Prep time</span></div><div><b>35 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>4 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">600 g pork belly, thinly sliced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 cups coconut milk (gata)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 tbsp bagoong alamang</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 onion, 4 garlic cloves, 1-inch ginger</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">6–10 siling labuyo (bird's-eye chilies), sliced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 long green chilies (siling haba)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Salt, pepper and a splash of vinegar</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Render the pork</strong><span>Cook pork belly in a dry pan until the fat renders and edges brown.</span></li>
+          <li><strong>Sauté aromatics</strong><span>Add garlic, onion, ginger and bagoong. Stir 2 minutes until fragrant.</span></li>
+          <li><strong>Simmer in gata</strong><span>Pour in coconut milk and bird's-eye chilies. Simmer gently 20–25 minutes until the oil separates.</span></li>
+          <li><strong>Finish</strong><span>Add long chilies and cook 5 more minutes. Serve with plenty of steamed rice.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="sisig" role="dialog" aria-label="Pork Sisig recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/pork-sisig.jpg" alt="Pork sisig">
+      <span class="region">📍 Pampanga</span>
+      <h2>Pork Sisig</h2>
+    </div>
+    <div class="intro">
+      <p>"Sisig" first meant a sour salad of unripe fruit. In the 1970s, Lucing Cunanan of Angeles City chopped and grilled leftover pig's head and ears into a sizzling plate. Today it arrives on a hot platter, topped with a raw egg, to go with cold beer.</p>
+      <div class="tags"><span>Savory</span><span>Tangy</span><span>Crispy</span><span>Spicy</span></div>
+    </div>
+    <div class="meta"><div><b>20 min</b><span>Prep time</span></div><div><b>25 min</b><span>Cook time</span></div><div><b>Medium</b><span>Difficulty</span></div><div><b>4 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">600 g pork belly or pork shoulder</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 red onion, finely chopped</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 tbsp calamansi juice (or lemon)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp soy sauce and 1 tbsp mayonnaise</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 siling labuyo, minced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp chicken liver spread (optional)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">4 eggs, to top the sizzling plates</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Boil the pork</strong><span>Simmer pork with salt and peppercorns for 40 minutes until tender, then drain.</span></li>
+          <li><strong>Grill or fry</strong><span>Sear or grill the pork until deeply charred and crisp at the edges.</span></li>
+          <li><strong>Chop and mix</strong><span>Chop finely and toss with onion, chilies, soy sauce, calamansi, mayonnaise and liver spread.</span></li>
+          <li><strong>Sizzle</strong><span>Heat a cast-iron plate until smoking. Tip sisig on top and crack an egg over it. Serve at once.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="halohalo" role="dialog" aria-label="Halo-Halo recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/Halo-Halo.jpg" alt="Halo-halo">
+      <span class="region">📍 Tagalog Region</span>
+      <h2>Halo-Halo</h2>
+    </div>
+    <div class="intro">
+      <p>Japanese immigrants sold iced sweet beans in pre-war Manila. Filipinos added ube, leche flan, jackfruit and evaporated milk, and halo-halo ("mix-mix") was born. Stir everything together before your first bite.</p>
+      <div class="tags"><span>Sweet</span><span>Creamy</span><span>Icy</span></div>
+    </div>
+    <div class="meta"><div><b>20 min</b><span>Prep time</span></div><div><b>0 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>2 glasses</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 cups finely shaved ice</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup evaporated milk</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">¼ cup sweetened red beans and saging na saba (sweet banana)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp nata de coco and kaong (sugar palm fruit)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp macapuno (sweet coconut strings)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">4 slices leche flan</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 scoops ube ice cream and pinipig (toasted rice flakes)</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Layer the sweets</strong><span>Divide beans, banana, nata, kaong and macapuno between two tall glasses.</span></li>
+          <li><strong>Add the ice</strong><span>Pile shaved ice high, almost to the rim.</span></li>
+          <li><strong>Pour the milk</strong><span>Drizzle evaporated milk slowly so it seeps through the ice.</span></li>
+          <li><strong>Crown and serve</strong><span>Top with leche flan, ube ice cream and pinipig. Mix well, then eat right away.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="inasal" role="dialog" aria-label="Chicken Inasal recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/inasal.jpg" alt="Chicken Inasal">
+      <span class="region">📍 Negros, Visayas</span>
+      <h2>Chicken Inasal</h2>
+    </div>
+    <div class="intro">
+      <p>Bacolod's famous grilled chicken. Lemongrass, calamansi and ginger flavor the meat, and a basting oil tinted with annatto gives it its golden color. It's eaten with rice and a vinegar dipping sauce.</p>
+      <div class="tags"><span>Smoky</span><span>Tangy</span><span>Savory</span></div>
+    </div>
+    <div class="meta"><div><b>2 hrs</b><span>Prep time</span></div><div><b>30 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>4 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 kg chicken legs or thighs</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 stalks lemongrass, bruised</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup calamansi juice and ¼ cup vinegar</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 head garlic and 2-inch ginger, crushed</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 tbsp salt and 1 tsp black pepper</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 tbsp oil mixed with 1 tbsp annatto (atsuete)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Steamed rice and spiced vinegar to serve</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Marinate</strong><span>Combine chicken with lemongrass, calamansi, vinegar, garlic, ginger, salt and pepper. Refrigerate at least 2 hours.</span></li>
+          <li><strong>Make the basting oil</strong><span>Warm the oil with annatto until it turns orange, then strain.</span></li>
+          <li><strong>Grill</strong><span>Cook over medium coals for 25–30 minutes, turning often and brushing with basting oil.</span></li>
+          <li><strong>Serve</strong><span>Rest 5 minutes. Serve with rice and spiced vinegar for dipping.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="batchoy" role="dialog" aria-label="La Paz Batchoy recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/batchoy.jpg" alt="La Paz Batchoy">
+      <span class="region">📍 Iloilo, Visayas</span>
+      <h2>La Paz Batchoy</h2>
+    </div>
+    <div class="intro">
+      <p>Named after the La Paz district of Iloilo City, this noodle soup combines a pork-bone broth with shrimp paste, miki noodles and crunchy toppings. It is the city's signature comfort food.</p>
+      <div class="tags"><span>Savory</span><span>Rich</span><span>Crunchy</span></div>
+    </div>
+    <div class="meta"><div><b>15 min</b><span>Prep time</span></div><div><b>45 min</b><span>Cook time</span></div><div><b>Medium</b><span>Difficulty</span></div><div><b>4 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">500 g pork bones</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">300 g pork loin and 150 g pork liver, sliced thin</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 tbsp shrimp paste (bagoong or guinamos)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 onion, 4 garlic cloves and 1 tsp black pepper</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">300 g fresh miki (egg noodles)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup crushed chicharron</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Fried garlic, spring onion and 1 raw egg per bowl (optional)</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Make the broth</strong><span>Simmer pork bones and onion in 2 liters of water for 30 minutes. Skim off scum.</span></li>
+          <li><strong>Season</strong><span>Stir in shrimp paste, garlic and pepper. Add pork loin and simmer 10 minutes, then add liver for the last 3.</span></li>
+          <li><strong>Cook the noodles</strong><span>Boil miki 2 minutes in a separate pot, then drain.</span></li>
+          <li><strong>Assemble</strong><span>Place noodles in bowls, ladle in broth and meat, then top with chicharron, fried garlic and spring onion.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="binignit" role="dialog" aria-label="Binignit recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/binignit.jpg" alt="Binignit">
+      <span class="region">📍 Visayas</span>
+      <h2>Binignit</h2>
+    </div>
+    <div class="intro">
+      <p>A sweet stew of root crops, banana and sago pearls in coconut milk. In many Visayan homes it's served warm during Holy Week, when meat is avoided.</p>
+      <div class="tags"><span>Sweet</span><span>Creamy</span><span>Comforting</span></div>
+    </div>
+    <div class="meta"><div><b>20 min</b><span>Prep time</span></div><div><b>40 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>6 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 cups coconut milk and 3 cups water</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 cup taro (gabi), cubed</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 cup sweet potato (kamote), cubed</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 saging na saba (cooking bananas), sliced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup sago pearls</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup jackfruit (langka), sliced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup glutinous rice balls and ¾ cup sugar</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Start the base</strong><span>Bring water and half the coconut milk to a gentle simmer. Add taro and cook 10 minutes.</span></li>
+          <li><strong>Add root crops</strong><span>Add sweet potato and banana. Cook until all are just tender, about 10 minutes.</span></li>
+          <li><strong>Add the soft parts</strong><span>Stir in sago, jackfruit and rice balls. Cook until the sago turns clear and the balls float.</span></li>
+          <li><strong>Sweeten</strong><span>Add sugar and the remaining coconut milk. Simmer 5 minutes and serve warm.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="panga" role="dialog" aria-label="Grilled Tuna Panga recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/panga.jpg" alt="Grilled Tuna Panga">
+      <span class="region">📍 Davao, Mindanao</span>
+      <h2>Grilled Tuna Panga</h2>
+    </div>
+    <div class="intro">
+      <p>Mindanao's tuna ports, especially Davao and General Santos, are famous for panga, the jaw and collar. It is fatty, tender and made for the grill. A bright soy-and-calamansi dip cuts the richness.</p>
+      <div class="tags"><span>Smoky</span><span>Savory</span><span>Tangy</span></div>
+    </div>
+    <div class="meta"><div><b>15 min</b><span>Prep time</span></div><div><b>25 min</b><span>Cook time</span></div><div><b>Easy</b><span>Difficulty</span></div><div><b>3 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 kg tuna panga (jaw or collar)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 tbsp calamansi juice</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 tbsp soy sauce</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">4 garlic cloves, minced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1-inch ginger, grated</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Salt, pepper and oil for brushing</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Dip: soy sauce, calamansi, chopped chili and onion</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Season</strong><span>Rub panga with salt, pepper, garlic and ginger. Pour over calamansi juice and soy sauce and marinate 15 minutes.</span></li>
+          <li><strong>Heat the grill</strong><span>Get coals medium-hot and brush the grate with oil so the fish doesn't stick.</span></li>
+          <li><strong>Grill</strong><span>Cook 10–12 minutes per side, basting with leftover marinade, until opaque and lightly charred.</span></li>
+          <li><strong>Serve</strong><span>Mix the dip and serve with hot rice and sliced tomatoes.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="satti" role="dialog" aria-label="Satti recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/satti.jpg" alt="Satti">
+      <span class="region">📍 Zamboanga, Mindanao</span>
+      <h2>Satti</h2>
+    </div>
+    <div class="intro">
+      <p>Satti is a Zamboanga staple, closely related to the satay of Southeast Asia. Small skewers of marinated meat are grilled and served with a thick, spicy sauce. People often eat it for breakfast with rice cakes.</p>
+      <div class="tags"><span>Spicy</span><span>Sweet</span><span>Smoky</span></div>
+    </div>
+    <div class="meta"><div><b>30 min</b><span>Prep time</span></div><div><b>15 min</b><span>Cook time</span></div><div><b>Medium</b><span>Difficulty</span></div><div><b>4 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">600 g chicken or beef, cut into thin strips</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">3 tbsp soy sauce and 2 tbsp brown sugar</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">4 garlic cloves and 1-inch ginger, minced</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 tsp turmeric</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Bamboo skewers, soaked in water</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Sauce: ½ cup crushed peanuts, 2 tbsp chili, ½ cup water, 1 tbsp sugar</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Steamed rice or puso (hanging rice), to serve</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Marinate</strong><span>Mix meat with soy sauce, sugar, garlic, ginger and turmeric. Rest 30 minutes.</span></li>
+          <li><strong>Make the sauce</strong><span>Simmer peanuts, chili, water and sugar for 10 minutes until thick.</span></li>
+          <li><strong>Skewer and grill</strong><span>Thread meat onto skewers and grill over hot coals 2–3 minutes per side.</span></li>
+          <li><strong>Serve</strong><span>Spoon the sauce over the skewers and serve with rice.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="piaparan" role="dialog" aria-label="Chicken Piaparan recipe">
+  <a class="backdrop" href="#library" aria-label="Close recipe"></a>
+  <div class="sheet">
+    <a class="close" href="#library" aria-label="Close recipe">✕</a>
+    <div class="banner">
+      <img src="assets/piaparan.jpg" alt="Chicken Piaparan">
+      <span class="region">📍 Lanao, Mindanao</span>
+      <h2>Chicken Piaparan</h2>
+    </div>
+    <div class="intro">
+      <p>The Maranao people of Lanao cook chicken in coconut milk and season it with palapa, a ground mix of scallions, ginger, chili and toasted coconut. The result is creamy, warm and deeply aromatic.</p>
+      <div class="tags"><span>Creamy</span><span>Spicy</span><span>Aromatic</span></div>
+    </div>
+    <div class="meta"><div><b>20 min</b><span>Prep time</span></div><div><b>40 min</b><span>Cook time</span></div><div><b>Medium</b><span>Difficulty</span></div><div><b>5 people</b><span>Servings</span></div></div>
+    <div class="cols">
+      <div>
+        <h3>Ingredients <small>tick as you go</small></h3>
+        <ul class="ing">
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 kg chicken, cut into pieces</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2 cups coconut milk</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">½ cup grated coconut, toasted until golden</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 cup chopped scallions (or spring onion)</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">2-inch ginger and 3–5 chilies</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">1 tsp turmeric</span></label></li>
+          <li><label><input type="checkbox"><span class="box"></span><span class="txt">Salt and steamed rice</span></label></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <ol class="steps">
+          <li><strong>Make the palapa</strong><span>Pound the scallions, ginger, chilies and toasted coconut together into a rough paste.</span></li>
+          <li><strong>Simmer the chicken</strong><span>Cook chicken with turmeric, salt and 1 cup of coconut milk for 20 minutes.</span></li>
+          <li><strong>Season</strong><span>Stir in the palapa and the remaining coconut milk. Simmer gently 15 minutes until the sauce thickens.</span></li>
+          <li><strong>Serve</strong><span>Taste and adjust the salt. Serve hot with steamed rice.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
